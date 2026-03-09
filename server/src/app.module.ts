@@ -7,7 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { ProjectsModule } from './projects/projects.module';
 import { ClientsModule } from './clients/clients.module';
-import { InvoicesModule } from './invoices/invoices.module';
+import { TimeEntriesModule } from './time-entries/time-entries.module';
 import { InvoicesModule } from './invoices/invoices.module';
 
 @Module({
