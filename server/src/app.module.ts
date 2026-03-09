@@ -5,6 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { ProjectsModule } from './projects/projects.module';
 import { ClientsModule } from './clients/clients.module';
 
 @Module({
@@ -23,6 +24,7 @@ import { ClientsModule } from './clients/clients.module';
     
     AuthModule,
     UsersModule,
+    ProjectsModule,
     ClientsModule,
   ],
 })
