@@ -3,6 +3,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from '../theme/theme';
+import ApolloWrapper from '@/components/ApolloWrapper';
 
 export const metadata: Metadata = {
   title: 'AgencyFlow',
@@ -20,7 +21,9 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            {children}
+            <ApolloWrapper>
+              {children}
+            </ApolloWrapper>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
